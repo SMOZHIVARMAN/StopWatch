@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Analog Clock + Stopwatch</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1>🕒 Analog Clock + Stopwatch</h1>
+
+  <div class="clock">
+    <div class="center-point"></div>
+    <div class="hand hour" id="hourHand"></div>
+    <div class="hand minute" id="minuteHand"></div>
+    <div class="hand second" id="secondHand"></div>
+    <div class="numbers">
+      <span style="--n:1">10</span>
+      <span style="--n:2">11</span>
+      <span style="--n:3">12</span>
+      <span style="--n:4">1</span>
+      <span style="--n:5">2</span>
+      <span style="--n:6">3</span>
+      <span style="--n:7">4</span>
+      <span style="--n:8">5</span>
+      <span style="--n:9">6</span>
+      <span style="--n:10">7</span>
+      <span style="--n:11">8</span>
+      <span style="--n:12">9</span>
+    </div>
+  </div>
+
+  <div class="stopwatch">
+    <h2>Stopwatch</h2>
+    <div id="stopwatchTime" class="time">00:00:00.00</div>
+    <div class="buttons">
+      <button onclick="startStopwatch()">Start</button>
+      <button onclick="stopStopwatch()">Stop</button>
+      <button onclick="resetStopwatch()">Reset</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
